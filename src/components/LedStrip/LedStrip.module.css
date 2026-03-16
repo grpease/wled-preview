@@ -1,0 +1,58 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  padding: 8px;
+  overflow: auto;
+}
+
+.labelStart,
+.labelEnd {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #999;
+  align-self: flex-start;
+}
+
+.labelEnd {
+  align-self: flex-end;
+}
+
+.grid {
+  display: grid;
+  gap: 2px;
+  align-self: flex-start;
+}
+
+.cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.effectBadge {
+  position: absolute;
+  top: -14px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffd700;
+  font-size: 0.55rem;
+  white-space: nowrap;
+  padding: 1px 3px;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 24px;
+}
