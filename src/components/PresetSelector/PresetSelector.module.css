@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #ccc;
+  white-space: nowrap;
+}
+
+.select {
+  flex: 1;
+  background: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.select:focus {
+  border-color: #6ea8fe;
+}
+
+.select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

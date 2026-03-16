@@ -1,0 +1,21 @@
+/* Two-column layout: editor left ~40%, preview right ~60% */
+.app {
+  display: flex;
+  height: 100vh;
+  min-width: 1280px;
+  background: #0d0d0d;
+  color: #e0e0e0;
+  font-family: system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+}
+
+.app > :first-child {
+  flex: 0 0 40%;
+  border-right: 1px solid #333;
+  overflow: hidden;
+}
+
+.app > :last-child {
+  flex: 1;
+  overflow: hidden;
+}
