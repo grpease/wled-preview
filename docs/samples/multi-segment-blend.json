@@ -1,0 +1,203 @@
+{
+  "1": {
+    "n": "Two Segments - No Overlap",
+    "on": true,
+    "bri": 255,
+    "transition": 7,
+    "mainseg": 0,
+    "seg": [
+      {
+        "id": 0,
+        "start": 0,
+        "stop": 30,
+        "on": true,
+        "bri": 255,
+        "col": [[255, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+        "fx": 0,
+        "sx": 128,
+        "ix": 128,
+        "pal": 0,
+        "bm": 0
+      },
+      {
+        "id": 1,
+        "start": 30,
+        "stop": 60,
+        "on": true,
+        "bri": 255,
+        "col": [[0, 0, 255, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+        "fx": 0,
+        "sx": 128,
+        "ix": 128,
+        "pal": 0,
+        "bm": 0
+      }
+    ]
+  },
+  "2": {
+    "n": "Overlapping Add Blend (bm:2)",
+    "on": true,
+    "bri": 255,
+    "transition": 7,
+    "mainseg": 0,
+    "seg": [
+      {
+        "id": 0,
+        "start": 0,
+        "stop": 60,
+        "on": true,
+        "bri": 255,
+        "col": [[100, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+        "fx": 0,
+        "sx": 128,
+        "ix": 128,
+        "pal": 0,
+        "bm": 0
+      },
+      {
+        "id": 1,
+        "start": 20,
+        "stop": 60,
+        "on": true,
+        "bri": 255,
+        "col": [[0, 0, 100, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+        "fx": 0,
+        "sx": 128,
+        "ix": 128,
+        "pal": 0,
+        "bm": 2
+      }
+    ]
+  },
+  "3": {
+    "n": "Overlapping Multiply Blend (bm:4)",
+    "on": true,
+    "bri": 255,
+    "transition": 7,
+    "mainseg": 0,
+    "seg": [
+      {
+        "id": 0,
+        "start": 0,
+        "stop": 60,
+        "on": true,
+        "bri": 255,
+        "col": [[200, 200, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+        "fx": 0,
+        "sx": 128,
+        "ix": 128,
+        "pal": 0,
+        "bm": 0
+      },
+      {
+        "id": 1,
+        "start": 20,
+        "stop": 60,
+        "on": true,
+        "bri": 255,
+        "col": [[200, 0, 200, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+        "fx": 0,
+        "sx": 128,
+        "ix": 128,
+        "pal": 0,
+        "bm": 4
+      }
+    ]
+  },
+  "4": {
+    "n": "Rev + Mirror Transforms",
+    "on": true,
+    "bri": 255,
+    "transition": 7,
+    "mainseg": 0,
+    "seg": [
+      {
+        "id": 0,
+        "start": 0,
+        "stop": 60,
+        "on": true,
+        "bri": 255,
+        "col": [[255, 80, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+        "fx": 3,
+        "sx": 80,
+        "ix": 128,
+        "pal": 0,
+        "rev": true,
+        "mi": false,
+        "bm": 0
+      }
+    ]
+  },
+  "5": {
+    "n": "Mirror Transform - Breathe",
+    "on": true,
+    "bri": 255,
+    "transition": 7,
+    "mainseg": 0,
+    "seg": [
+      {
+        "id": 0,
+        "start": 0,
+        "stop": 60,
+        "on": true,
+        "bri": 255,
+        "col": [[0, 160, 255, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+        "fx": 2,
+        "sx": 60,
+        "ix": 200,
+        "pal": 0,
+        "rev": false,
+        "mi": true,
+        "bm": 0
+      }
+    ]
+  },
+  "6": {
+    "n": "Three Segments - RGB Zones",
+    "on": true,
+    "bri": 255,
+    "transition": 7,
+    "mainseg": 0,
+    "seg": [
+      {
+        "id": 0,
+        "start": 0,
+        "stop": 20,
+        "on": true,
+        "bri": 255,
+        "col": [[255, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+        "fx": 15,
+        "sx": 120,
+        "ix": 200,
+        "pal": 0,
+        "bm": 0
+      },
+      {
+        "id": 1,
+        "start": 20,
+        "stop": 40,
+        "on": true,
+        "bri": 255,
+        "col": [[0, 200, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+        "fx": 15,
+        "sx": 100,
+        "ix": 200,
+        "pal": 0,
+        "bm": 0
+      },
+      {
+        "id": 2,
+        "start": 40,
+        "stop": 60,
+        "on": true,
+        "bri": 255,
+        "col": [[0, 0, 255, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+        "fx": 15,
+        "sx": 80,
+        "ix": 200,
+        "pal": 0,
+        "bm": 0
+      }
+    ]
+  }
+}
