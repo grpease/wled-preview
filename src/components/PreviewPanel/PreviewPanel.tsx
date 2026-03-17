@@ -1,27 +1,31 @@
-import type { LedColor, Preset } from '../../types/wled'
+import type { Preset, AnimationOptions, Playlist, PresetMap } from '../../types/wled'
 import { PresetSelector } from '../PresetSelector/PresetSelector'
 import { LedStrip } from '../LedStrip/LedStrip'
+import { AnimationControls } from '../AnimationControls/AnimationControls'
+import { PlaylistPlayer } from '../PlaylistPlayer/PlaylistPlayer'
 import styles from './PreviewPanel.module.css'
-
-const ROW_WIDTH = 25
 
 interface PreviewPanelProps {
   presets: Preset[]
   selectedPresetId: string | null
   onSelectPreset: (id: string) => void
-  ledColors: LedColor[]
-  rowWidth?: number
+  cssColors: string[]
+  animationOptions: AnimationOptions
+  onAnimationOptionsChange: (opts: AnimationOptions) => void
+  playlist?: Playlist | null
+  presetMap?: PresetMap | null
 }
 
 export function PreviewPanel({
   presets,
   selectedPresetId,
   onSelectPreset,
-  ledColors,
-  rowWidth = ROW_WIDTH,
+  cssColors,
+  animationOptions,
+  onAnimationOptionsChange,
+  playlist,
+  presetMap,
 }: PreviewPanelProps) {
-  const totalLeds = ledColors.length
-
   return (
     <div className={styles.panel}>
       <PresetSelector
@@ -30,8 +34,12 @@ export function PreviewPanel({
         onChange={onSelectPreset}
         disabled={presets.length === 0}
       />
+      {playlist && presetMap && (
+        <PlaylistPlayer playlist={playlist} presets={presetMap} onPresetChange={onSelectPreset} />
+      )}
+      <AnimationControls options={animationOptions} onChange={onAnimationOptionsChange} />
       <div className={styles.stripContainer}>
-        <LedStrip ledColors={ledColors} totalLeds={totalLeds} rowWidth={rowWidth} />
+        <LedStrip cssColors={cssColors} />
       </div>
     </div>
   )

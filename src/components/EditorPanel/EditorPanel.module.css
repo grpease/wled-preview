@@ -6,6 +6,31 @@
   box-sizing: border-box;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.loadButton {
+  padding: 3px 10px;
+  font-size: 0.8rem;
+  background: #2a4a7a;
+  color: #e0e0e0;
+  border: 1px solid #4a7aaa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loadButton:hover {
+  background: #3a5a9a;
+}
+
+.fileInput {
+  display: none;
+}
+
 .heading {
   margin: 0 0 8px;
   font-size: 0.9rem;

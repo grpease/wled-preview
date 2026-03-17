@@ -5,7 +5,10 @@
   min-width: 1280px;
   background: #0d0d0d;
   color: #e0e0e0;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
   overflow: hidden;
 }
 

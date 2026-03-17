@@ -1,0 +1,16 @@
+.player {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 0.82rem;
+}
+
+.label {
+  color: #888;
+  font-weight: 600;
+}
+
+.step {
+  color: #ccc;
+}

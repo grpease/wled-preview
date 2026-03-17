@@ -1,0 +1,41 @@
+.controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 4px;
+  flex-wrap: wrap;
+}
+
+.gammaLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: #ccc;
+  cursor: pointer;
+  user-select: none;
+}
+
+.brightnessRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.briLabel {
+  font-size: 0.82rem;
+  color: #ccc;
+  white-space: nowrap;
+}
+
+.slider {
+  width: 100px;
+  accent-color: #6ea8fe;
+}
+
+.briValue {
+  font-size: 0.8rem;
+  color: #aaa;
+  min-width: 36px;
+}
